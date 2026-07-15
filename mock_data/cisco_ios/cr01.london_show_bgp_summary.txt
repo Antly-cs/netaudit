@@ -1,0 +1,6 @@
+BGP router identifier 1.1.1.1, local AS number 65001
+BGP table version is 1, main routing table version 1
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.0.0.2        4        65002    1245    1240        1    0    0 02:14:55        5
+192.168.1.2     4        65003       0       0        0    0    0 never    Active
