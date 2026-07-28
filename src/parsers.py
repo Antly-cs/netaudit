@@ -21,7 +21,7 @@ def parse_ip_interface_brief(raw_text: str) -> List[Dict[str, Any]]:
     parsed_interfaces = []
 
     pattern = re.compile(
-        r"^(?P<interface>\S+)\s+(?P<ip_address>\S+)\s+\w+\s+\w+\s+(?P<status>up|down|administratively down)\s+(?P<protocol>up|down)$",
+        r"^(?P<interface>\S+)\s+(?P<ip_address>\S+)\s+\w+\s+\w+\s+(?P<status>up|down|administratively down)\s+(?P<protocol>up|down)\s*$",
         re.MULTILINE
     )
 
@@ -36,7 +36,7 @@ def parse_bgp_summary(raw_text: str) -> List[Dict[str, Any]]:
     parsed_neighbors = []
 
     pattern = re.compile(
-        r"^(?P<neighbor>[0-9.]+)\s+\d+\s+(?P<asn>\d+)\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+(?P<up_down>\S+)\s+(?P<state_pfx>\S+)$",
+        r"^(?P<neighbor>[0-9.]+)\s+\d+\s+(?P<asn>\d+)\s+\d+\s+\d+\s+\d+\s+\d+\s+\d+\s+(?P<up_down>\S+)\s+(?P<state_pfx>\S+)\s*$",
         re.MULTILINE
     )
 
