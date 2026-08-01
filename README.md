@@ -4,7 +4,7 @@ An automated, CLI-based security auditing tool built in Python. Cisco Config Aud
 
 This tool is designed with enterprise SOC integration in mind, outputting structured JSON reports ready for SIEM ingestion (e.g., Wazuh, Splunk).
 
-![Terminal Output](assets/terminal-output.jpeg)
+![Terminal Output](assets/terminal-output.png)
 
 ## Key Features
 
